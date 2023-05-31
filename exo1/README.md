@@ -1,9 +1,12 @@
-# La suite de Fibonacci
+# Fibonacci sequence
 
-Les 10 premiers éléments de la suite de Fibonacci forment l’ensemble {1, 2, 3, 5, 8, 13, 21, 34, 55, 89}.
-On remarque que chaque élément est constitué de la somme des deux éléments précédents.
-On considère une suite de Fibonacci dont l’élément le plus grand est strictement inférieur à 4 millions.
+The first 10 elements of the Fibonacci sequence are {1, 2, 3, 5, 8, 13, 21, 34, 55, 89}.
+We notice that each element is the sum of the two previous elements.
+We consider a Fibonacci sequence whose largest element is strictly less than 4 million.
 
-## Ce qui est attendu
-Trouver la somme de tous les éléments pairs de cette suite.
-Vous devrez faire une PR (Pull request) avec du code executable, écrit dans le langage de votre choix, le plus propre possible.
+## What is expected
+
+Find the sum of all the even elements of this sequence.
+You will have to make a PR (Pull request) with executable code, written in the language of your choice, as clean as possible.
+
+[]: # Path: exo1/README.md
