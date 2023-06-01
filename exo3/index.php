@@ -39,7 +39,7 @@ try {
     foreach ($expenses as $expense) {
         echo(sprintf(
             "%s - %s %s a payé %s€ (%s€ par participant) (%s)",
-            $expense->getType() === 'TYPE_FOOD' ? "\u{1F37D}\u{FE0F}" : "\u{1F37A} ",
+            $expense->getType() === 'TYPE_FOOD' ? "\u{1F37D} " : "\u{1F37A}",
             $expense->getPayer()->getFirstname(),
             $expense->getPayer()->getLastname(),
             $expense->getAmount(),
