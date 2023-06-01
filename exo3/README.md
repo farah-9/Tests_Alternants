@@ -1,13 +1,12 @@
 # Code legacy
 
-## Sujet
-Il s’agit d’une application à exécuter en mode console (très à la pointe des nouvelles tendances web^^) permettant de connaître le solde de chaque utilisateur pour savoir qui doit de l’argent à qui.
+It's a console application (very at the forefront of new web trends^^) allowing to know the balance of each user to know who owes money to whom.
 
-Cette application a été développée par plusieurs développeurs différents et n'est plus très propre.
+This application was developed by several different developers and is no longer very clean.
 
-En l’état le code ne peut pas fonctionner. Quand on lance le fichier index.php avec un interpréteur PHP, l’application nous renvoie une erreur.
-SANS TOUCHER AU FICHIER index.php, faire en sorte que l’application renvoie ce qui est attendu.
+As is, the code cannot work. When we launch the index.php file with a PHP interpreter, the application returns an error.
+WITHOUT TOUCHING THE index.php FILE, make sure that the application returns what is expected.
 
+## What is expected
 
-## Ce qui est attendu
-Vous devrez faire une PR (Pull request) modifiant différents fichiers (possibilité d'en ajouter et/ou supprimer) qui rend l'application fonctionnelle et améliorant grandement la codebase existante.
+You will have to make a PR (Pull request) modifying different files (possibility to add and/or delete) which makes the application functional and greatly improving the existing codebase.

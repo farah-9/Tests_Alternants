@@ -1,9 +1,11 @@
 # Palindrome
 
-## Sujet
-Un palindrome est un nombre qui peut se lire de la même façon de la gauche vers la droite ou de la droite vers la gauche (par exemple 99, 909). Le plus grand palindrome issu de la multiplication de deux entiers naturels strictement inférieurs à 100 est 9009 (91 x 99).
+A palindrome is a number that can be read the same way from left to right or from right to left (for example 99, 909).
+The largest palindrome from the multiplication of two natural integers strictly less than 100 is 9009 (91 x 99).
+If we consider the multiplication of two natural integers strictly less than 999, what is the largest palindrome that we can get?
 
-Si les deux entiers considérés étaient strictement inférieurs à 999, quel serait le plus grand palindrome qu’on pourrait obtenir ?
+## What is expected
 
-## Ce qui est attendu
-Vous devrez faire une PR (Pull request) avec du code executable, écrit dans le langage de votre choix, le plus propre possible répondant à la question posée.
+You will have to make a PR (Pull request) with executable code, written in the language of your choice, as clean as possible.
+
+[]: # Path: exo2/README.md
