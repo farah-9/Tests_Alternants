@@ -1,24 +1,31 @@
 <?php
 
+
 class DrinkExpense
 {
-    private float $amount;
+    /* Remove 'float' type */
+    private $amount;
 
     private $description;
 
-    private \DateTime $happenedAt;
+/*  Import the DateTime class and delete the 'DateTime' type */
+    private $happenedAt;
 
-    private User $le_payeur;
+/* Import the User class and delete the 'User' type  */
+
+    private $le_payeur;
 
     /**
      * @var array<User>
      */
-    private array $participants;
+
+     /* delete type 'array'  */
+    private $participants;
 
     /**
      * @param array <string, User> $participants
      */
-    public function __construct(float $amount, string $description, DateTime $happenedAt, User $le_payeur, array $participants)
+    public function __construct($amount, $description, DateTime $happenedAt, User $le_payeur, array $participants)
     {
         $this->amount = $amount;
         $this->description = $description;
@@ -56,7 +63,19 @@ class DrinkExpense
         return $this->le_payeur;
     }
 
-    function get_type() {
+/* Add the 'string' type and rename the method to match the one declared in 'index.php'. */
+    function getType(): string 
+    {
         return 'DRINK';
+    }
+/* I add the 'getUnitaryShared()' method to the 'DrinkExpense' class */
+    public function getUnitaryShared(): float
+    {
+        return $this->amount / count($this->participants);
+    }
+/* I add the 'getUserShare()' method to the 'DrinkExpense' class */
+    public function getUserShare(User $user): float
+    {
+        return $user === $this->le_payeur ? $this->amount - $this->getUnitaryShared() : -$this->getUnitaryShared();
     }
 }
