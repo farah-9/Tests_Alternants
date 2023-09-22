@@ -1,19 +1,25 @@
 <?php
 
+
 class FoodExpense
 {
-    private float $amount;
+    /* Remove the 'float type' */
+
+    private $amount;
 
     private $description;
+/* Import the DateTime class, then delete the 'DateTime' type   */
+    private $happenedAt;
 
-    private \DateTime $happenedAt;
-
-    private User $le_payeur;
+    /* Importer la classe User puis supprimer le type  */
+    private $le_payeur;
 
     /**
      * @var array<User>
      */
-    private array $participants;
+
+     /* remove 'array' type   */
+    private $participants;
 
     /**
      * @param array <string, User> $participants
@@ -55,7 +61,19 @@ class FoodExpense
         return $this->participants;
     }
 
-    function get_type() {
+    function getType() {
         return 'FOOD';
     }
+
+    public function getUnitaryShared(): float
+    {
+        return $this->amount / count($this->participants);
+    }
+
+    /*Rajouter la fonction 'getUserShare()' qui me permettra de renvoyer la part de l'utilisateur dans la dépense  */
+    public function getUserShare(User $user): float
+    {
+        return $this->getUnitaryShared() * (in_array($user, $this->participants) ? 1 : 0);
+    }
+    
 }
